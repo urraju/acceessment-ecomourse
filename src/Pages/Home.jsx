@@ -1,4 +1,5 @@
 import Banner from "../Layout/Banner";
+import Collection from "../Layout/Collection";
 import Navbar from "../Layout/Navbar";
 import NavbarHead from "./NavbarHead";
 
@@ -8,6 +9,7 @@ const Home = () => {
              <NavbarHead/>
              <Navbar/>
              <Banner/>
+             <Collection/>
         </div>
     )}
 export default Home;
