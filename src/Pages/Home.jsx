@@ -1,4 +1,5 @@
 import Banner from "../Layout/Banner";
+import CardSection from "../Layout/CardSection";
 import Collection from "../Layout/Collection";
 import Navbar from "../Layout/Navbar";
 import NavbarHead from "./NavbarHead";
@@ -10,6 +11,7 @@ const Home = () => {
              <Navbar/>
              <Banner/>
              <Collection/>
+             <CardSection/>
         </div>
     )}
 export default Home;
