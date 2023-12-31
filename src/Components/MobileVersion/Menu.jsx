@@ -21,7 +21,7 @@ import {
   MdShoppingCart,
 } from "react-icons/md";
 import { Link } from "react-router-dom";
-import {   FaUser } from "react-icons/fa";
+import { FaUser } from "react-icons/fa";
 import { BiSolidCategory } from "react-icons/bi";
 
 const Menu = () => {
@@ -55,10 +55,10 @@ const Menu = () => {
                 ></label>
                 <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
                   <div className="font-inter">
-                    <div className="dropdown bg-white px-2   dropdown-bottom">
+                    <div className="dropdown px-2   dropdown-bottom">
                       <div tabIndex={1} role="button" className=" m-1">
                         <ul className="mb-3 space-y-3">
-                          <a className="  flex   gap-2 items-center">
+                          <a className="  flex gap-2 items-center">
                             <img className="w-4" src={icon1} alt="" />
                             Womens’ & Girls’ Fashion
                           </a>
@@ -126,26 +126,6 @@ const Menu = () => {
                           </a>
                         </ul>
                       </div>
-                      {/* <div
-                    tabIndex={1}
-                    className="dropdown-content px-2 ml-1 z-30 menu p-2 shadow bg-white   w-52"
-                  >
-                    <ul className="text-left space-y-4 z-30 font-inter">
-                      <li>kids bags</li>
-                      <li>laptop bags & cases</li>
-                      <li>Luggage</li>
-                      <li>Travel Bags</li>
-                      <li>Men’s bag</li>
-                       
-                      <div className="text-orange-500 flex-row-reverse font-inter flex gap-3 justify-between">  <MdOutlineKeyboardArrowRight className="text-orange-500 text-lg"/>Women’s Bag
-                      </div>
-                      <li>Men’s Watches</li>
-                      <li>Kids Watches</li>
-                      <li>women’s jewellery</li>
-                      <li>men’s jewellery</li>
-                      <li>sunglasses</li>
-                    </ul>
-                  </div> */}
                     </div>
                   </div>
                 </ul>
@@ -153,8 +133,8 @@ const Menu = () => {
             </div>
           </ul>
         </div>
-        <div className="flex gap-4">
-          <div className="flex flex-col ml-4 items-center">
+        <div className="flex gap-5">
+          <div className="flex flex-col ml-5 items-center">
             <MdMessage className="text-lg text-gray-500" />
             <p className="text-sm">Message</p>
           </div>
@@ -172,7 +152,7 @@ const Menu = () => {
         </div>
       </div>
 
-      <div className="navbar-end">
+      <div className="navbar-end mr-4">
         <Link className="flex flex-col ml-3 items-center">
           <FaUser className="text-lg text-gray-500" />
           <p className="text-sm">Account</p>
