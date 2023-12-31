@@ -8,7 +8,7 @@ import {   } from 'react-icons/fa';
 import { CiSearch, CiShoppingCart } from "react-icons/ci";
 const Banner2 = () => {
     return(
-        <div className='px-1'>
+        <div className=''>
              <div>
         <Swiper
           dir="rtl"
@@ -23,7 +23,7 @@ const Banner2 = () => {
           <div className=' '>
             <SwiperSlide className="relative">
               <img className=" w-full" src={banner1} alt="" />
-              <div className='absolute right-10 gap-2 top-3 flex flex-row-reverse items-center '>
+              <div className='absolute right-14 gap-2 top-3 flex flex-row-reverse items-center '>
               <div className='backdrop-blur rounded-lg py-2 px-2 text-white  flex gap-2 items-center bg-black/50'>
               <input className='bg-transparent placeholder:text-white font-light text-left outline-none text-white' placeholder='Search Product' type="text" />
                 <CiSearch className='font-light text-xl'/>
@@ -33,7 +33,7 @@ const Banner2 = () => {
             </SwiperSlide>
             <SwiperSlide className="relative">
               <img className=" w-full" src={banner1} alt="" />
-              <div className='absolute right-10 gap-2 top-3 flex flex-row-reverse items-center '>
+              <div className='absolute right-14 gap-2 top-3 flex flex-row-reverse items-center '>
               <div className='backdrop-blur rounded-lg py-2 px-2 text-white  flex gap-2 items-center bg-black/50'>
               <input className='bg-transparent placeholder:text-white font-light text-left outline-none text-white' placeholder='Search Product' type="text" />
                 <CiSearch className='font-light text-xl'/>
@@ -43,7 +43,7 @@ const Banner2 = () => {
             </SwiperSlide>
             <SwiperSlide className="relative">
               <img className=" w-full" src={banner1} alt="" />
-              <div className='absolute right-10 gap-2 top-3 flex flex-row-reverse items-center '>
+              <div className='absolute right-14 gap-2 top-3 flex flex-row-reverse items-center '>
               <div className='backdrop-blur rounded-lg py-2 px-2 text-white  flex gap-2 items-center bg-black/50'>
               <input className='bg-transparent placeholder:text-white font-light text-left outline-none text-white' placeholder='Search Product' type="text" />
                 <CiSearch className='font-light text-xl'/>
