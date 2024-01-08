@@ -13,16 +13,14 @@ import icon12 from "../../assets/menuIcon/Computer and laptop.png";
 import icon13 from "../../assets/menuIcon/Pet Supplies.png";
 import icon14 from "../../assets/menuIcon/Group 597.png";
 import {
-  MdHome,
-  MdMan2,
-  MdMessage,
-  MdOutlineKeyboardArrowRight,
-  MdShop,
-  MdShoppingCart,
-} from "react-icons/md";
+  MdOutlineKeyboardArrowRight,} from "react-icons/md";
+import { AiOutlineMessage } from "react-icons/ai";
+import { HiOutlineHome } from "react-icons/hi2";
+import { CiShoppingCart } from "react-icons/ci";
 import { Link } from "react-router-dom";
 import { FaUser } from "react-icons/fa";
 import { BiSolidCategory } from "react-icons/bi";
+import { CiUser } from "react-icons/ci";
 
 const Menu = () => {
   return (
@@ -33,16 +31,39 @@ const Menu = () => {
             <div className="drawer-content">
               {/* Page content here */}
               <label htmlFor="my-drawer" className=" ">
-                <div className="flex text-orange-500 text-sm flex-col items-center">
-                  <BiSolidCategory className="text-lg" />
-                  Categories
+                <div className="flex gap-[32px] justify-between ">
+                  <div className="flex text-orange-500 hover:text-orange-500 text-sm flex-col items-center">
+                    <BiSolidCategory className="text-2xl " />
+                   
+                    <p className="text-sm hover:text-orange-500 font-semibold text-gray-500"> Categories</p>
+                  </div>
+                  <Link className="flex flex-col  items-center">
+                    <AiOutlineMessage className="text-2xl hover:text-orange-500 text-gray-500" />
+                    <p className="text-sm font-semibold hover:text-orange-500 text-gray-500">Message</p>
+                  </Link>
+                  <Link
+                    to="/"
+                    className="flex flex-col text-orange-500  items-center"
+                  >
+                    <HiOutlineHome className="text-2xl   " />
+                    <p className="text-sm font-semibold hover:text-orange-500 text-gray-500">Home</p>
+                  </Link>
+                  <Link className="flex flex-col hover:text-orange-500  items-center">
+                    <CiShoppingCart className="text-2xl hover:text-orange-500 text-gray-500" />
+                    <p className="text-sm font-semibold hover:text-orange-500 text-gray-500">Card</p>
+                  </Link>
+
+                  <Link className="flex flex-col hover:text-orange-500   items-center">
+                    <CiUser className="text-2xl text-gray-500 hover:text-orange-500" />
+                    <p className="text-sm font-semibold hover:text-orange-500 text-gray-500">Account</p>
+                  </Link>
                 </div>
               </label>
             </div>
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 w-80"
+            className="menu menu-sm dropdown-content mt-3 -ml-2 z-[1]   w-full"
           >
             <div className="drawer">
               <input id="my-drawer" type="checkbox" className="drawer-toggle" />
@@ -53,7 +74,7 @@ const Menu = () => {
                   aria-label="close sidebar"
                   className="drawer-overlay"
                 ></label>
-                <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
+                <ul className="menu p-4  w-full min-h-full backdrop-blur bg-black/30  text-gray-200">
                   <div className="font-inter">
                     <div className="dropdown px-2   dropdown-bottom">
                       <div tabIndex={1} role="button" className=" m-1">
@@ -133,30 +154,7 @@ const Menu = () => {
             </div>
           </ul>
         </div>
-        <div className="flex gap-5">
-          <div className="flex flex-col ml-5 items-center">
-            <MdMessage className="text-lg text-gray-500" />
-            <p className="text-sm">Message</p>
-          </div>
-          <Link
-            to="/"
-            className="flex flex-col text-orange-500 ml-3 items-center"
-          >
-            <MdHome className="text-lg " />
-            <p className="text-sm">Home</p>
-          </Link>
-          <Link className="flex flex-col ml-3 items-center">
-            <MdShoppingCart className="text-lg text-gray-500" />
-            <p className="text-sm">Card</p>
-          </Link>
-        </div>
-      </div>
-
-      <div className="navbar-end mr-4">
-        <Link className="flex flex-col ml-3 items-center">
-          <FaUser className="text-lg text-gray-500" />
-          <p className="text-sm">Account</p>
-        </Link>
+        <div className="flex gap-5"></div>
       </div>
     </div>
   );

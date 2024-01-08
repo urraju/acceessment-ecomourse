@@ -50,12 +50,12 @@ const Banner = () => {
           modules={[FreeMode, Pagination]}
           className="mySwiper"
         >
-          <div>
-            <SwiperSlide className="relative bg-no-repeat bg-cover">
+          <div className=" ">
+            <SwiperSlide className="relative   bg-no-repeat bg-cover">
               <img className="h-[504px] object-cover" src={banner1} alt="" />
               <div className="font-inter">
-                <div className="dropdown bg-white px-2 absolute top-0 left-52 dropdown-left">
-                  <div tabIndex={0} role="button" className=" m-1">
+                <div className="dropdown bg-white  px-2 absolute top-0 left-[184px] dropdown-left">
+                  <div tabIndex={0} role="button" className=" m-2">
                     <ul className="mb-3 space-y-3">
                       <li className="text-left flex flex-row-reverse gap-2 items-center">
                         <img className="w-4" src={icon1} alt="" />
@@ -152,8 +152,8 @@ const Banner = () => {
             <SwiperSlide className="relative bg-no-repeat bg-cover">
               <img className="h-[504px] object-cover" src={banner2} alt="" />
               <div className="font-inter">
-                <div className="dropdown bg-white px-2 absolute top-0 left-52 dropdown-left">
-                  <div tabIndex={0} role="button" className=" m-1">
+                <div className="dropdown bg-white px-2 absolute top-0 left-[184px] dropdown-left">
+                  <div tabIndex={0} role="button" className=" m-2">
                     <ul className="mb-3 space-y-3">
                       <li className="text-left flex flex-row-reverse gap-2 items-center">
                         <img className="w-4" src={icon1} alt="" />
@@ -250,8 +250,8 @@ const Banner = () => {
             <SwiperSlide className="relative bg-no-repeat bg-cover">
               <img className="h-[504px] object-cover" src={banner3} alt="" />
               <div className="font-inter">
-                <div className="dropdown bg-white px-2 absolute top-0 left-52 dropdown-left">
-                  <div tabIndex={0} role="button" className=" m-1">
+                <div className="dropdown bg-white px-2 absolute top-0 left-[184px] dropdown-left">
+                  <div tabIndex={0} role="button" className=" m-2">
                     <ul className="mb-3 space-y-3">
                       <li className="text-left flex flex-row-reverse gap-2 items-center">
                         <img className="w-4" src={icon1} alt="" />

@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div>
-      <div className="max-w-screen-2xl mx-auto py-3 px-3 flex justify-between gap-5">
+      <div className="max-w-screen-2xl mx-auto py-3 px-2 md:px-0 flex justify-between gap-5">
         <Link to="/">
           <img src={logo} alt="" />
         </Link>
@@ -27,10 +27,10 @@ const Navbar = () => {
           />
         </div>
         <div className="flex gap-5">
-          <img className="bg-[#EFF0F5] p-3 rounded-xl" src={group} alt="" />
-          <img className="bg-[#EFF0F5] p-3 rounded-xl" src={shopping} alt="" />
-          <img className="bg-[#EFF0F5] p-3 rounded-xl" src={love} alt="" />
-          <div className="flex bg-orange-400 w-max rounded-lg  ">
+          <img className="bg-[#EFF0F5] p-3 rounded-lg hover:bg-orange-500 duration-150" src={group} alt="" />
+          <img className="bg-[#EFF0F5] p-3 rounded-lg hover:bg-orange-500 duration-150" src={shopping} alt="" />
+          <img className="bg-[#EFF0F5] p-3 rounded-lg hover:bg-orange-500 duration-150" src={love} alt="" />
+          <div className="flex bg-orange-400 w-max rounded-lg hover:bg-orange-500 duration-150 ">
             <img className="w-10 h-max" src={logo2} alt="" />
             <p className="py-2 rounded-2xl px-2 font-inter inline-block font-bold text-white tracking-widest">
               Cloud Service
