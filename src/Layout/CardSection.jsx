@@ -13,7 +13,7 @@ const CardSection = () => {
   return (
     <div className="bg-gray-200  py-10">
       <div className="">
-        <div className="font-inter px-3 rounded bg-white border-b py-3 flex justify-between max-w-screen-2xl mx-auto">
+        <div className="font-inter px-3 rounded bg-white border-b py-3 flex justify-between max-w-screen-xl mx-auto">
           <div className="flex items-center gap-20">
             <h1 className="text-orange-500 font-inter text-2xl">FlashSale</h1>
             <div className="flex justify-between items-center">
@@ -38,7 +38,7 @@ const CardSection = () => {
           </Link>
         </div>
       </div>
-      <div className="grid grid-cols-6 max-w-screen-2xl bg-white rounded p-3 mx-auto">
+      <div className="grid lg:grid-cols-6 md:grid-cols-3 max-w-screen-xl bg-white rounded p-3 mx-auto ">
         {card.map((item) => (
           <CardItem key={item.id} data={item} />
         ))}

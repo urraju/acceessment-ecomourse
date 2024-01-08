@@ -16,7 +16,7 @@ const CardCollection = () => {
   }, []);
   return (
     <div className="bg-gray-200 h-screen">
-      <div className="font-inter px-3 rounded bg-white border-b py-3 flex justify-between max-w-screen-2xl mx-auto">
+      <div className="font-inter px-3 rounded bg-white border-b py-3 flex justify-between max-w-screen-xl mx-auto">
         <div className="flex items-center gap-5">
           <h1 className="text-orange-500 font-inter text-xl">FlashSale</h1>
           <div className="flex justify-between items-center">

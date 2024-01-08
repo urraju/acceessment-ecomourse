@@ -26,12 +26,12 @@ const Menu = () => {
   return (
     <div className="navbar sticky top-0 z-30  bg-base-100">
       <div className="navbar-start  ">
-        <div className="dropdown">
+        <div className="dropdown dropdown-hover">
           <div tabIndex={0} role="button" className=" items-center   lg:hidden">
             <div className="drawer-content">
               {/* Page content here */}
-              <label htmlFor="my-drawer" className=" ">
-                <div className="flex gap-[32px] justify-between ">
+              <label htmlFor="my-drawer" className=" flex justify-center items-center ">
+                <div className="flex gap-[32px]  ">
                   <div className="flex text-orange-500 hover:text-orange-500 text-sm flex-col items-center">
                     <BiSolidCategory className="text-2xl " />
                    

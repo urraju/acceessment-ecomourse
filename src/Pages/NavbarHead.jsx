@@ -4,7 +4,7 @@ const NavbarHead = () => {
   return (
     <div>
       <div className="bg-[#F0F1F1] ">
-        <div className="max-w-screen-2xl font-inter py-2 items-center mx-auto flex justify-between px-2 md:px-0">
+        <div className="max-w-screen-xl font-inter py-2 items-center mx-auto flex justify-between px-2 md:px-0">
           <div className="flex gap-4">
             <div>
               <select className=" bg-transparent" name="language" id="">

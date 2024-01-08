@@ -33,28 +33,15 @@ const Banner = () => {
           pagination={{
             clickable: true,
           }}
-          //   breakpoints={{
-          //     640: {
-          //       slidesPerView: 2,
-          //       spaceBetween: 20,
-          //     },
-          //     768: {
-          //       slidesPerView: 4,
-          //       spaceBetween: 40,
-          //     },
-          //     1024: {
-          //       slidesPerView: 1,
-          //       spaceBetween: 50,
-          //     },
-          //   }}
+          
           modules={[FreeMode, Pagination]}
           className="mySwiper"
         >
-          <div className=" ">
-            <SwiperSlide className="relative   bg-no-repeat bg-cover">
+          <div>
+            <SwiperSlide className="  relative bg-no-repeat bg-cover">
               <img className="h-[504px] object-cover" src={banner1} alt="" />
               <div className="font-inter">
-                <div className="dropdown bg-white  px-2 absolute top-0 left-[184px] dropdown-left">
+                <div className="dropdown   bg-white w-fit  px-2 absolute  top-0 md:left-0 lg:left-[312px] dropdown-left">
                   <div tabIndex={0} role="button" className=" m-2">
                     <ul className="mb-3 space-y-3">
                       <li className="text-left flex flex-row-reverse gap-2 items-center">
@@ -69,7 +56,7 @@ const Banner = () => {
                     </ul>
 
                     {/* clickable menu  */}
-                    <div className="flex flex-row-reverse items-center justify-between gap-2">
+                    <div className="flex  flex-row-reverse items-center justify-between gap-2">
                       <img className="w-5" src={icon3} alt="" />
                       <button className="text-orange-500">
                         Watches, Bags, Jewellery
@@ -103,6 +90,7 @@ const Banner = () => {
                         <img className="w-4" src={icon9} alt="" />
                         Groceries
                       </li>
+                      
                       <li className="text-left items-center flex flex-row-reverse gap-2">
                         <img className="w-4" src={icon10} alt="" />
                         Home & Lifestyle
@@ -152,7 +140,7 @@ const Banner = () => {
             <SwiperSlide className="relative bg-no-repeat bg-cover">
               <img className="h-[504px] object-cover" src={banner2} alt="" />
               <div className="font-inter">
-                <div className="dropdown bg-white px-2 absolute top-0 left-[184px] dropdown-left">
+                <div className="dropdown bg-white px-2 fixed top-0 md:left-0 lg:left-[312px] dropdown-left">
                   <div tabIndex={0} role="button" className=" m-2">
                     <ul className="mb-3 space-y-3">
                       <li className="text-left flex flex-row-reverse gap-2 items-center">
@@ -250,7 +238,7 @@ const Banner = () => {
             <SwiperSlide className="relative bg-no-repeat bg-cover">
               <img className="h-[504px] object-cover" src={banner3} alt="" />
               <div className="font-inter">
-                <div className="dropdown bg-white px-2 absolute top-0 left-[184px] dropdown-left">
+                <div className="dropdown bg-white px-2 fixed top-0 md:left-0 lg:left-[312px] dropdown-left">
                   <div tabIndex={0} role="button" className=" m-2">
                     <ul className="mb-3 space-y-3">
                       <li className="text-left flex flex-row-reverse gap-2 items-center">

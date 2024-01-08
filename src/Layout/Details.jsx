@@ -19,7 +19,7 @@ const Details = () => {
     <div className="bg-gray-200 h-screen px-2 md:px-0">
       <NavbarHead />
       <Navbar />
-      <div className="max-w-screen-2xl  p-7 justify-center items-center  flex gap-10 bg-white mx-auto mt-3">
+      <div className="max-w-screen-xl  p-7 justify-center items-center  flex gap-10 bg-white mx-auto mt-3 rounded">
         <div>
           <img className="w-96 rounded" src={finddata?.img} alt="" />
         </div>

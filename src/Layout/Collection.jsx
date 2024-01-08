@@ -7,7 +7,7 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 const Collection = () => {
     return(
        <div className=' py-4 px-2 md:px-0 mt-10 bg-gray-200'>
-         <div className='max-w-screen-2xl mx-auto '>
+         <div className='max-w-screen-xl mx-auto '>
              <div className='font-inter grid grid-cols-5  gap-4'>
                 <div className='flex items-center hover:shadow-lg duration-200 hover:text-orange-500   justify-between px-2 rounded-full py-2 bg-white'>
                     <div className='flex items-center gap-4'>

@@ -6,7 +6,7 @@ const CardItem = ({ data }) => {
   return (
     <div className="px-2">
       <div>
-        <div className="card-div relative font-inter h-[350px] border rounded  px-3">
+        <div className="card-div relative font-inter md:h-[330px] md:mt-4 lg:mt-0 lg:h-[300px] border rounded  px-3">
           <img className="mx-auto rounded" src={img} alt="" />
           <CiHeart className="absolute top-3 hover:bg-orange-500 hover:text-white duration-200 right-5 w-8 h-8 bg-gray-400 text-white rounded-full p-1" />
           <div className="absolute bottom-3">
@@ -15,7 +15,7 @@ const CardItem = ({ data }) => {
             </p>
 
             <p className="text-lg capitalize font-semibold mb-1">{name}</p>
-            <p className="hover-text">{description}</p>
+            <p className="hover-text text-sm">{description}</p>
             <div className="flex justify-between  mt-2 items-center">
               <p className="text-orange-500 font-semibold">${price}</p>
               <del>${old_price}</del>
